@@ -1,9 +1,9 @@
 {
-  "vendor": "CHANGE_ME",
-  "name": "CHANGE_ME",
-  "version": "0.0.0",
-  "title": "CHANGE_ME",
-  "description": "CHANGE_ME",
+  "vendor": "itglobers",
+  "name": "add-to-cart-info",
+  "version": "0.0.1",
+  "title": "Add to cart info",
+  "description": "Componente que mostrará información al momento de agregar un producto al carrito de compras",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
