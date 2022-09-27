@@ -35,27 +35,41 @@
     margin-bottom: 10px;
 }
 
-.container__checkout{
-    border: 1px #724293 solid;
-    background-color: #724293;
-    width: 200px;
-    border-radius: 8px;
-    margin: 10px;
-}
-
 .button__checkout__cart{
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
-    text-align: center;
+    
     color: #e5e5e5;
 }
 
-.button__checkout{
+.button__checkout, .container__checkout{
     border: 1px #724293 solid;
     background-color: #724293;
     width: 200px;
     border-radius: 8px;
     margin: 10px;
     color: #e5e5e5;
+}
+
+.container__checkout{
+    text-align: center;
+}
+
+
+.button__checkout__cart_a{
+    color: #5e5e5e;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.button__checkout:hover,
+.container__checkout:hover {
+background-color: #3f1a58;
+
+}
+
+.button__checkout__cart_a:hover{
+    color: #000;
+    text-decoration: underline;
+    
 }

@@ -17,6 +17,7 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
     const container__checkout = generateBlockClass(styles.container__checkout, blockClass)
     const button__checkout = generateBlockClass(styles.button__checkout, blockClass)
     const button__checkout__cart = generateBlockClass(styles.button__checkout__cart, blockClass)
+    const button__checkout__cart_a = generateBlockClass(styles.button__checkout__cart_a, blockClass)
     const productInfo = useProduct()
     const { orderForm: {
         items,
@@ -56,14 +57,14 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
                 <p> Tenemos {items.length} items en tu compra</p>
                 <p className={summary__price}> Total : ${totalizers[0]?.value / 100}</p>
             </div>
-            {/*<ButtonGroup />  Acciones */}
+            {/*<ButtonGroup  />  Acciones */}
             <div>
                 <div className={container__checkout}>
-                    <a className={ button__checkout__cart} href='/'> CHECK OUT</a>
+                    <a className={ button__checkout__cart} href='/checkout'> CHECK OUT</a>
                 </div>
                 <div>
-                    <button  className={ button__checkout}>CONTINÚA COMPRANDO</button>
-                    <a href='/'  className={ button__checkout__cart}> VER CARRITO</a>
+                    <button  className={ button__checkout}><a className={ button__checkout__cart} href='/construccion'>CONTINÚA COMPRANDO</a></button>
+                    <a href='/checkout/#/cart'  className={ button__checkout__cart_a}> VER CARRITO</a>
                 </div>
             </div>
         </div>
